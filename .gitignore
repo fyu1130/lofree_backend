@@ -1,25 +1,45 @@
-/.phpunit.cache
+# Laravel vendor & node_modules
+/vendor
 /node_modules
-/public/build
-/public/hot
+
+# Laravel public output
 /public/storage
+/public/hot
+/public/build
+
+# Laravel storage
 /storage/*.key
 /storage/pail
-/vendor
+/storage/logs/*.log
+
+# Laravel env files
 .env
-.env.backup
-.env.production
 .env.local
+.env.production
 .env.staging
-.phpactor.json
+.env.backup
+
+# Laravel test cache
+.phpunit.cache
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+
+# Laravel debug
+.phpactor.json
 /auth.json
-/.fleet
+
+# Laravel database (SQLite only)
+/database/*.sqlite
+
+# Laravel IDE / editor support
 /.idea
-/.nova
 /.vscode
 /.zed
+/.fleet
+
+# Homestead
+Homestead.yaml
+Homestead.json
+
+# Yarn/NPM logs
+npm-debug.log
+yarn-error.log
