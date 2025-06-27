@@ -15,8 +15,8 @@
 - OS：WSL2 + Ubuntu 22.04.3 LTS
 - PHP：v8.3.8（ホスト / Docker）
 - Composer：v2.8.8
-- Docker：v28.0.4
-- Docker Compose：v2.34.0
+- Docker：v28.1.1
+- Docker Compose：v2.35.1
 
 ---
 
@@ -35,6 +35,8 @@
 ```bash
 # 1. コンテナのビルドと起動
 docker-compose up -d --build
+
+# ※指定してビルドしたらいい。ENV_FILE=.env.staging docker-compose up -d
 
 # 2. Laravel初期設定（初回のみ）
 docker exec -it lofree-backend bash
@@ -62,3 +64,8 @@ DB_DATABASE=lofree
 DB_USERNAME=user
 DB_PASSWORD=password
 ```
+
+## 現在（20250601）バックエンド勉強不足
+- 環境の切り分けについて理解が甘い。（build upの仕方で環境変更可など）
+- dockerについての理解があまい。（docker-desktopを再度インストールしないといけなくなった）
+- 
