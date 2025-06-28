@@ -41,7 +41,7 @@ docker-compose up -d --build
 # 2. Laravel初期設定（初回のみ）
 docker exec -it lofree-backend bash
 php artisan key:generate
-php artisan migrate
+php artisan migrate:fresh --seed
 exit
 ```
 
@@ -65,7 +65,5 @@ DB_USERNAME=user
 DB_PASSWORD=password
 ```
 
-## 現在（20250601）バックエンド勉強不足
-- 環境の切り分けについて理解が甘い。（build upの仕方で環境変更可など）
-- dockerについての理解があまい。（docker-desktopを再度インストールしないといけなくなった）
-- 
+## error処理
+| Docker起動しない                   | GUIで停止、WSLとの連携異常                      | `wsl --shutdown` → `net stop/start com.docker.service` → Docker Desktop再起動 |
