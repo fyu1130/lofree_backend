@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->foreignId('transaction_id')->constrained()->onDelete('cascade');
             $table->integer('rating');
             $table->text('comment')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->timestamps();
         });
     }
 

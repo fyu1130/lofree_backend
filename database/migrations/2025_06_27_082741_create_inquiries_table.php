@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->text('body');
             $table->string('email');
             $table->enum('status', ['open', 'closed']);
-            $table->timestamp('created_at')->nullable();
+            $table->timestamps();
         });
     }
 
