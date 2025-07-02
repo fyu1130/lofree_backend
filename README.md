@@ -1,7 +1,7 @@
 
 ---
 
-## 📁 `backend/README.md`（Laravel + Docker）
+## `backend/README.md`（Laravel + Docker）
 
 # lofree-backend
 
