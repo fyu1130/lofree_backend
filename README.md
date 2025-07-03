@@ -67,3 +67,12 @@ DB_PASSWORD=password
 
 ## error処理
 | Docker起動しない                   | GUIで停止、WSLとの連携異常                      | `wsl --shutdown` → `net stop/start com.docker.service` → Docker Desktop再起動 |
+
+
+## CI/CDについて
+|CI | CircleCIでPHPUnit実行|
+|CD | EC2へSSH通信 → git pull → Docker再起動|
+
+## 環境管理について
+|環境ファイル | 役割|
+|||
